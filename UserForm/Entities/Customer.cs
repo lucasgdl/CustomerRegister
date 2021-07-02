@@ -9,6 +9,7 @@ namespace UserForm.Entities
 {
     public class Customer : Entity
     {
+        public Customer() { }
         public Customer(PersonName name, Address address, Phone phone, string email)
         {
             Name = name;

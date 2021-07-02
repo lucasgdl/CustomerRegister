@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UserForm.ValueObjects
 {
-    public class Zipcode
+    public class Zipcode : ValueObject
     {
         public Zipcode(string value)
         {

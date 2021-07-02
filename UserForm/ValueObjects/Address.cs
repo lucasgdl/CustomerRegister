@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UserForm.Entities;
 
 namespace UserForm.ValueObjects
 {
-    public class Address
+    public class Address : Entity
     {
+        public Address() { }
         public Address(Zipcode zipCode, string street, string number, string complement, string neighborhood, string city, string state)
         {
             ZipCode = zipCode;
@@ -22,7 +24,6 @@ namespace UserForm.ValueObjects
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="address">
         /// Para injetar os valores corretamente usar a máscade de exemplo
         /// "{Street},{Number},{Neighborhood},{City},{State},{ZipCode.Unmasked},{Complement}"
         /// </param>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UserForm.ValueObjects
 {
-    public class Phone
+    public class Phone : ValueObject
     {
         public String Value { get; private set; }
 

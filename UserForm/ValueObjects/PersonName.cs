@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UserForm.ValueObjects
 {
-    public class PersonName
+    public class PersonName : ValueObject
     {
         public String FirstName { get; private set; }
         public String MiddleName { get; private set; }
